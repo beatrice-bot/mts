@@ -1,0 +1,72 @@
+<html>
+
+<!-- Mirrored from mts.alianah.sch.id/bismillah/ by HTTrack Website Copier/3.x [XR&CO'2017], Fri, 22 Aug 2025 10:03:16 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<title>Administrator &rsaquo; Log In</title>
+  <link rel="shortcut icon" href="../favicon.png" />
+<script language="javascript">
+function validasi(form){
+  if (form.username.value == ""){
+    alert("Anda belum mengisikan Username.");
+    form.username.focus();
+    return (false);
+  }
+     
+  if (form.password.value == ""){
+    alert("Anda belum mengisikan Password.");
+    form.password.focus();
+    return (false);
+  }
+  
+  if (form.kode.value == ""){
+    alert("Anda belum mengisikan Kode Captcha.");
+    form.kode.focus();
+    return (false);
+  }
+  return (true);
+}
+</script>
+
+<link href="css/login.css" rel="stylesheet" type="text/css" />
+</head>
+<body OnLoad="document.login.username.focus();">
+<div id="login">
+	<h1>ADMINISTRATOR</h1>
+		<div class="fieldContainer">
+			<form name="login" action="../../external.html?link=https://mts.alianah.sch.id/bismillah/cek_login.php" method="POST" onSubmit="return validasi(this)">
+        <div class="formRow">
+            <div class="field">
+                <input type="text" name="username" placeholder=" username...">
+            </div>
+        </div>
+        <div class="formRow">     
+            <div class="field">
+                <input type="password" name="password" placeholder=" password...">
+            </div>
+        </div>
+		<div class="formRow">     
+            <div style='background:#fff; width:96.5%; margin-left:4px' class="field">
+                <img style="height:28px;  margin-left:57px; margin-top:2px;" src='../captcha.png'>
+            </div>
+        </div>
+		<div class="formRow">     
+            <div class="field">
+                <input type="text" name="kode" placeholder=" Input kode...">
+            </div>
+        </div>
+		</div>
+		
+	<div class="signupButton">
+        <input type="submit" name="submit" id="submit" value="Login" />
+    </div>
+			</form>
+			
+</div>
+
+<script type="text/javascript" src="../../ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script type="text/javascript" src="script.html"></script>
+</body>
+
+<!-- Mirrored from mts.alianah.sch.id/bismillah/ by HTTrack Website Copier/3.x [XR&CO'2017], Fri, 22 Aug 2025 10:03:19 GMT -->
+</html>
